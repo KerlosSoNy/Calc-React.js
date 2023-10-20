@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+.Calc{
+    width: 20%;
+    padding: 1%;
+    background-color: rgb(238 238 238);
+    border-radius: 5px;
+}
+.Screens{
+    display: flex;
+    flex-direction: column;
+}
+.showScreen{
+    height: 6rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 5% 5% 0% 0%;
+}
+.showScreen::placeholder{
+    font-size: 26px;
+    font-weight: 600;
+    padding: 3%;
+    color: beige;
+}
+.showResult{
+    background-color: black;
+    height: 3rem;
+    width: 100%;
+    border-radius:  0% 0% 5% 5%;
+}
+.showResult::placeholder{
+    padding: 2%;
+    font-size: 20px;
+    color: beige;
+}
+.Buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Buttons div{
+    display: flex;
+    flex-direction: row;
+}
+
+.Buttons div button{
+    margin: 1%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 75%;
+    width: 24%;
+    font-size: 20px;
+    height: 5rem;
+    transition-duration: 0.3s;
+}
+
+.Buttons div button:hover{
+    font-size: 24px;
+}
+
+.Zero{
+    display: flex;
+    justify-content: end;
+}
+
+.Zero .first{
+    margin-right: 25%;
+}
+
+@media (max-width:165px) {
+    .Calc{
+        width: 175%;
+        background-color: transparent;
+    }
+    .showScreen{
+        height: 2rem;
+    }
+    .showResult{
+        height: 1rem;
+    }
+    .showScreen::placeholder{
+        font-size: 12px;
+    }
+    .showResult::placeholder{
+        font-size: 11px;
+    }
+    .Buttons div button{
+        font-size: 10px;
+        height: 1.5rem;
+    }
+
+    .Buttons div button:hover{
+        font-size: 11px;
+    }
+}
+@media  (min-width:166px) and (max-width:762px) {
+    .Calc{
+        background-color: transparent;
+        width: 100%;
+    }
+}
+@media (min-width:763px) and (max-width:1112px){
+    .Calc{
+        background-color: transparent;
+        width: 50%;
+    }
+}
